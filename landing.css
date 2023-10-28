@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Pacifico&family=Pixelify+Sans&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600&family=Quicksand:wght@700&family=Roboto:ital,wght@0,100;0,300;0,700;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@800&family=Ubuntu:ital,wght@0,500;1,400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+/* navigation*/
+.nav0{
+    background-color:   rgb(34, 29, 29);
+}
+.nav0 ul li{
+    display: inline-block; 
+    
+}
+.nav0 h1{
+    color:white;
+    cursor: pointer;
+}
+.nav0 span{
+    color: orange;
+    cursor: pointer;
+}
+.nav0 ul li a{
+    position: relative;
+    transition: 0.4s ease;
+    left: 25px;
+    color: white
+}
+.nav0 ul li a:hover{
+    transition: 0.4s ease;
+    background-color: rgb(176, 119, 11);
+    border-radius: 9px;
+}
+.nav0 ul li input{
+    position: relative;
+    border-radius: 7px;
+    top: 25px;
+    left: 50px;
+    
+    width: 730%;
+}
+.nav0 ul li #searchglass{
+    position: relative;
+    top: 2px;
+    left: 1365px;
+}
+.nav0 ul li #bowl{
+    position: relative;
+    left: 1250px;
+    top: 5px;
+    color: orange;
+    font-size: 2rem;
+}
+.sections{
+    display: none;
+}
+#mobilemenu{
+    display: none;
+}
+/* navigation-close*/
+/* mediaa*/
+@media screen and (max-height: 930px){
+    /* navigations*/
+    .nav0{
+        width: 100%;
+    }
+    .nav0 h1{
+        font-size: 1rem;
+    }
+    .nav0 a{
+        display: none;
+    }
+    #mobilemenu{
+        position: relative;
+        top: -20px;
+        cursor: pointer;
+        border: none;
+        background-color: rgba(255, 166, 0, 0);
+        left: 160px;
+        display: block;
+        color: orange;
+    }
+    .nav0 ul li input{
+        position: relative;
+        top: -3px;
+        background-color: rgba(94, 91, 91, 0.534);
+        border: none;
+        left: 32px;
+        color: white;
+
+        width: 100%;
+    }
+    .nav0 ul li input ::placeholder{
+        color: white;
+    }
+   .nav0 ul li #searchglass{
+        position: absolute;
+        color: white;
+        left: 335px;
+        top:15px;
+    }
+    .nav0 ul li #bowl{
+        position: relative;
+        left: 35px;
+    }
+    .sections{
+        position: fixed;
+        background-color: rgb(40, 35, 35);
+        height: 5000vh;
+        width: 5;
+        top: 37px;
+        display: none;
+    }
+    .navigationombile{
+       background-color: rgb(34, 26, 26);
+       height: 120px;
+    }
+    .navigationombile ul li{
+        display: flex;
+        justify-content:start;
+        
+        align-items: start;
+    }
+    .navigationombile ul li button{
+        position: relative;
+        top: 25px;
+        padding: 5px;
+        border: none;
+        color: white;
+        background-color: rgba(37, 31, 31, 0);
+        text-decoration: underline;
+        transition: 0.4s ease;
+    }
+    .navigationombile ul li button:hover{
+        transition: 0.4s ease;
+        color: orange;
+    }
+    /*navigations - close*/
+}
+/*media close*/
